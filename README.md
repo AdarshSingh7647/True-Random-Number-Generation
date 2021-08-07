@@ -21,6 +21,14 @@ A popular chaotic map used in many designs is the chaotic tent map used in many 
 [0,1] onto itselt:                     
 ![](https://github.com/AdarshSingh7647/True-Random-Number-Generation/blob/main/images/Trngchaotictentmap.png)            
 where &alpha; is the coontrol parameter and x is the xurrent state of chaotic map.The behavior of a chaotic map is determined by its control paramenter value.</br>
+```python
+#Chaotic Map
+def chaotic_map(x):
+    alpha =1.99999
+    if x<0.5:
+        return (alpha* x)
+    return (alpha*(1-x))
+```
 In the case of the tent map when &alpha; increases from 0 to the chaotic map evoles from periodic to aperiodic.</br>
 This can be seen from the lyapunovs exponent plot of tent map where positive exponent indicate chaotic behaviour. </br>
 ![](https://github.com/AdarshSingh7647/True-Random-Number-Generation/blob/main/images/TentMapLyapunavExponent.png)           
@@ -122,6 +130,7 @@ def chaotic_map(x):
     if x<0.5:
         return (alpha* x)
     return (alpha*(1-x))
+    
 # o final array of 256 bit random numbers
 o=[]
 z=[0 for i in range(L)]
