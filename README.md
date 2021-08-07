@@ -62,7 +62,7 @@ where ![](https://github.com/AdarshSingh7647/True-Random-Number-Generation/blob/
 The XOR operation contributes to reducing bias in the final output.
 By bitwise concatenation of z<sup>i</sup> values 256-bit random number sequence O is obtained.</br>
 # CODE
-```
+``` python
 import IPython.display as ipd
 import math
 import statistics
