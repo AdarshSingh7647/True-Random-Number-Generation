@@ -180,7 +180,7 @@ To test the randomness of the sequence generated,the sequence is run on the DIEH
 
 | Test Name                                    | P-value     | Result |
 |----------------------------------------------|-------------|--------|
-| Birthday Spacings Test                       | 0.056737234 | PASS   |
+| Birthday Spacings Test                       | 0.056737234 | PASSED |
 | Overlapping 5-permutation Test               | 0.20026502  | PASSED |
 | Binary Rank Test for 32x32 Matrices          | 0.95128235  | PASSED |
 | Binary Rank Test for 6x8 Matrices            | 0.77978737  | PASSED |
