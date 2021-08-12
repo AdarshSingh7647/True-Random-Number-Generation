@@ -108,14 +108,14 @@ stream = p.open(
     output=True,
     frames_per_buffer=CHUNK
 )
-data=stream.read(CHUNK*8)
+data=stream.read(CHUNK*8,exception_on_overflow = False)
 
 data_int= np.array(struct.unpack(str(CHUNK*2) +'q',data),dtype=np.int8)[::2]
 t_end = time.time() 
 data_int = np.empty( shape=(0, 0) )
 #Convert the audio file into 8 bit variables.
 while len(data_int)<(N*L)+2000:
-    data=stream.read(CHUNK*8)
+    data=stream.read(CHUNK*8,exception_on_overflow = False)
     t= np.array(struct.unpack(str(CHUNK*2) +'q',data),dtype=np.int8)
     data_int= np.append(data_int,t) 
 data_int= data_int +127 
