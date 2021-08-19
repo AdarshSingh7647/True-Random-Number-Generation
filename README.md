@@ -1,3 +1,5 @@
+[# SUCCESSFULLY IMPLEMENTED THE RESEARCH PAPER FROM SCRATCH.
+](https://github.com/AdarshSingh7647/True-Random-Number-Generation/blob/main/True_Random_NG_paper.pdf)
 # True-Random-Number-Generation
 <b>Generation of random number sequence by harnessing randomness in ambient sound. </b></br>
 
